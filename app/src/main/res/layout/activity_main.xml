@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background=" #F0F0F0"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="15dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/pizzaimage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/pizza"/>
+
+                <TextView
+                    android:id="@+id/pizzatitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/pizzaimage"
+                    android:layout_marginTop="20dp"
+                    android:textSize="24sp"
+                    android:text="Pepperoni Pizza"
+                    android:textColor="#000000"
+                    android:alpha="0.87"/>
+
+                <TextView
+                    android:id="@+id/pizzadescr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pizzatitle"
+                    android:layout_marginTop="8dp"
+                    android:text="INR 6.00 - Comes with mozzarella filled crusts."
+                    android:layout_toEndOf="@id/pizzaimage"
+                    android:alpha="0.57"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="15dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/lemoadeimage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/lemonade"/>
+
+                <TextView
+                    android:id="@+id/lemonadetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/lemoadeimage"
+                    android:layout_marginTop="20dp"
+                    android:textSize="24sp"
+                    android:text="Mint Lemonade"
+                    android:textColor="#000000"
+                    android:alpha="0.87"/>
+
+                <TextView
+                    android:id="@+id/lemonadedescr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lemonadetitle"
+                    android:layout_marginTop="8dp"
+                    android:text="INR 3.00 - Made of fresh mint, lime and lemons."
+                    android:layout_toEndOf="@id/lemoadeimage"
+                    android:alpha="0.57"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/watermelonimg"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#D1C4E9"
+                    android:src="@drawable/watermelon" />
+
+                <TextView
+                    android:id="@+id/watertitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/watermelonimg"
+                    android:alpha="0.87"
+                    android:text="Water Melon "
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/waterdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/watertitle"
+                    android:layout_marginTop="8dp"
+                    android:text="INR 5.00 - Fruity pudding with chocolate dressing."
+                    android:layout_toEndOf="@id/watermelonimg"
+                    android:alpha="0.57"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/saladimage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#D1C4E9"
+                    android:src="@drawable/salad"/>
+
+                <TextView
+                    android:id="@+id/saladtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/saladimage"
+                    android:alpha="0.87"
+                    android:text="Salad"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/saladdescr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/saladtitle"
+                    android:layout_marginTop="8dp"
+                    android:text="INR 5.00 - Fruity pudding with chocolate dressing."
+                    android:layout_toEndOf="@id/saladimage"
+                    android:alpha="0.57"
+                    android:textColor="#000000"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/milkshakeimage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#D1C4E9"
+                    android:src="@drawable/milkshake"/>
+
+                <TextView
+                    android:id="@+id/milkshaketitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/milkshakeimage"
+                    android:alpha="0.87"
+                    android:text="Milk Shake"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/milkshakedescr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/milkshaketitle"
+                    android:layout_marginTop="8dp"
+                    android:text="INR 5.00 - Fruity pudding with chocolate dressing."
+                    android:layout_toEndOf="@id/milkshakeimage"
+                    android:alpha="0.57"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="74dp">
+
+                <ImageView
+                    android:id="@+id/cakeimage"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/cake" />
+
+                <TextView
+                    android:id="@+id/caketitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/cakeimage"
+                    android:alpha="0.87"
+                    android:text="Summer Pudding "
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/cakedescr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/caketitle"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/cakeimage"
+                    android:alpha="0.57"
+                    android:text="INR 5.00 - Fruity pudding with chocolate dressing."
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+    <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Order Now"
+       android:background="#18FFFF"
+       android:textColor="#FFFFFF"
+       android:padding="20dp"
+       android:textSize="17dp"
+       android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
